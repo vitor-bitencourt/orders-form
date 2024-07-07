@@ -1,0 +1,146 @@
+@media screen and (min-width: 769px){
+  header {
+    background-color: #0f0225;
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+  }
+  #logo {
+    width: 30px;
+    height: 30px;
+  }
+  main {
+    margin-top: 10vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  #orderForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  fieldset {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.7rem;
+  }
+  #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  button{
+    height: 5vh;
+    width: 40vw;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Anton SC', sans-serif;
+    margin-top: 25px;
+  }
+  button:hover {
+    cursor: pointer;
+  } 
+  #enviar {
+    background-color: #ff118b;
+  }
+  #enviar:hover {
+    background-color: #ba5187 ;
+  }
+  #limpar {
+    background-color: #d367cb;
+  }
+  #limpar:hover {
+    background-color: #ff7cf5;
+  }
+  footer {
+    background-color: #181922;
+    height: 30vh;
+    width: 100vw;
+    margin-top: 5vh;;
+    gap: 15px;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  #social {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  i{
+    font-size: 2rem;
+  }
+  #contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  #direitos {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #d367cb;
+  }
+  #clienteField{
+    border: 2px solid #6e1adb;
+  }
+  #cliente{
+    color: #6e1adb;
+  }
+  label{
+    font-size: 1.5rem;
+  }
+  input, select{
+    color: #0f0225;
+    border-radius: 5px;
+    height: 2rem;
+    width: 100%;
+    padding-left: 5px;
+    outline: none;
+    font-size: 1.5rem;
+  }
+  input[type="radio"]{
+    width: 15px;
+    height: 15px;
+  }
+  #nomeCompleto, #email, #telefone{
+    border: 2px solid #6e1adb;
+  }
+  #nomeCompleto:focus, #email:focus, #telefone:focus{
+    border: 2px solid #47108e;
+  }
+  #endereco{
+    color: #ffb137;
+  }
+  #enderecoField, #ruaNumero, #complemento, #bairro, #cidade, #estado, #cep{
+    border: 2px solid #ffb137;
+  }
+  #ruaNumero:focus, #complemento:focus, #bairro:focus, #cidade:focus, #estado:focus, #cep:focus{
+    border: 2px solid #ff7901;
+  }
+  #pedido{
+    color: #ff7901;
+  }
+  #pedidoField, #idProduto, #quantidade{
+    border: 2px solid #ff7901;
+  }
+  #idProduto:focus, #quantidade:focus{
+    border: 2px solid #ff4500;
+  }
+}
