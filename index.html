@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
+    <link rel="stylesheet" href="style/desktop.css">
+    <link rel="stylesheet" href="style/phone.css">
+    <link rel="stylesheet" href="style/tablet.css">
+    <link rel="stylesheet" href="style/index.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <!--Logo-->
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Formulário de Pedido</title>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" id="logo" alt="Logo Jitterbit">
+  </header>
+    <main>
+        <section>
+            <h1>Formulário de Pedido</h1>
+            <form id="orderForm">
+                <fieldset id="clienteField">
+                    <legend id="cliente">Informações do Cliente</legend>
+                    <label for="nomeCompleto" id="cliente">Nome Completo:</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" required><br>
+                    
+                    <label for="email" id="cliente">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="telefone" id="cliente" class="tel">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required><br>
+                </fieldset>
+                
+                <fieldset id="enderecoField">
+                    <legend id="endereco">Endereço de Entrega</legend>
+                    <label for="ruaNumero" id="endereco">Rua e Número:</label>
+                    <input type="text" id="ruaNumero" name="ruaNumero" required><br>
+                    
+                    <label for="complemento" id="endereco">Complemento:</label>
+                    <input type="text" id="complemento" name="complemento"><br>
+                    
+                    <label for="bairro" id="endereco">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" required><br>
+                    
+                    <label for="cidade" id="endereco">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required><br>
+                    
+                    <label for="estado" id="endereco">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="" id="estadoSel">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select><br>
+                    
+                    <label for="cep" id="endereco">CEP:</label>
+                    <input type="text" id="cep" name="cep" required><br>
+                </fieldset>
+                
+                <fieldset id="pedidoField">
+                    <legend id="pedido">Informações do Pedido</legend>
+                    <label for="idProduto" id="pedido">Id Produto:</label>
+                    <select id="idProduto" name="idProduto" required>
+                        <option value="">Selecione</option>
+                        <option value="produto1">Produto 1</option>
+                        <option value="produto2">Produto 2</option>
+                        <option value="produto3">Produto 3</option>
+                        <option value="produto4">Produto 4</option>
+                        <option value="produto5">Produto 5</option>
+                    </select><br>
+                    
+                    <label for="quantidade" id="pedido">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" required><br>
+                    
+                    <label id="pedido">Método de Pagamento:</label><br>
+                    <input type="radio" id="cartaoCredito" name="metodoPagamento" value="cartaoCredito" required>
+                    <label for="cartaoCredito" id="pedido">Cartão de Crédito</label><br>
+                    <input type="radio" id="boletoBancario" name="metodoPagamento" value="boletoBancario" required>
+                    <label for="boletoBancario" id="pedido">Boleto Bancário</label><br>
+                    <input type="radio" id="paypal" name="metodoPagamento" value="paypal" required>
+                    <label for="paypal" id="pedido">PayPal</label><br>
+                </fieldset>
+                
+                <div id="buttons">
+                  <button type="submit" id="enviar">Enviar Pedido</button>
+                  <button type="reset" id="limpar">Limpar Formulário</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+      <div id="social">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div id="contato">
+        <p>Endereço: Rua Fictícia, 123, Cidade Exemplo, País Imaginário</p>
+        <p>Telefone: (00) 1234-5678</p>
+        <p>E-mail: contato@agenciaficticia.com</p>
+      </div>
+      <div id="direitos">
+        <p>&copy; 2024 Agência Fictícia. Todos os direitos reservados.</p>
+      </div>
+      
+  </footer>
+
+  <script src="https://kit.fontawesome.com/c2d8f93a89.js" crossorigin="anonymous"></script>
+</body>
+</html>
